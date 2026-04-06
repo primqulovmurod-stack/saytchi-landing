@@ -73,7 +73,7 @@ export default function App() {
         )}
       </AnimatePresence>
       
-      {/* Navigation (Adaptive) */}
+      {/* Navigation (V.4.1 Pure Version) */}
       <nav className="fixed top-0 w-full z-50 px-4 py-4 lg:px-12 lg:py-8">
         <div className={`max-w-7xl mx-auto flex justify-between items-center backdrop-blur-3xl border rounded-[1.5rem] lg:rounded-[2rem] px-6 lg:px-10 py-4 lg:py-5 shadow-2xl transition-all duration-500 ${isDark ? 'bg-slate-900/80 border-white/10' : 'bg-white/80 border-slate-200'}`}>
           <div className="flex items-center gap-3 lg:gap-4 cursor-pointer">
@@ -111,15 +111,15 @@ export default function App() {
         </AnimatePresence>
       </nav>
 
-      {/* Hero Section (Adaptive) */}
+      {/* Hero Section (V.4.1 Optimized) */}
       <section className="relative pt-32 lg:pt-64 pb-20 lg:pb-32 px-6 lg:px-12 text-center space-y-8 lg:space-y-12">
         <div className="max-w-7xl mx-auto space-y-8 lg:space-y-12">
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`inline-flex items-center gap-3 border rounded-full px-5 py-2.5 lg:px-6 lg:py-3 text-[10px] lg:text-sm font-black tracking-wider uppercase shadow-inner transition-colors ${isDark ? 'bg-slate-800 border-white/5 text-slate-400' : 'bg-slate-50 border-slate-100 text-slate-500'}`}><Sparkles size={16} className="text-primary" /> AI yordamida sayt yaratish</motion.div>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className={`text-[42px] lg:text-[100px] font-black tracking-tight leading-[1.1] lg:leading-[0.9] max-w-5xl mx-auto transition-colors ${isDark ? 'text-white' : 'text-slate-900'} font-['Outfit'] uppercase`}>Sizning <span className="text-primary italic">Ma'lumotlaringiz</span>, Bizning <span className={`transition-colors ${isDark ? 'text-slate-800' : 'text-slate-200'}`}>Professional</span> Dizaynimiz.</motion.h1>
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className={`text-[42px] lg:text-[100px] font-black tracking-tight leading-[1.1] lg:leading-[0.9] max-w-5xl mx-auto transition-colors ${isDark ? 'text-white' : 'text-slate-900'} font-['Outfit'] uppercase`}>Sizning <span className="text-primary italic">Ma'lumotlaringiz</span>, Bizning <span className={`transition-colors ${isDark ? 'text-white/10' : 'text-slate-200'}`}>Professional</span> Dizaynimiz.</motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className={`text-base lg:text-2xl max-w-2xl mx-auto font-medium leading-relaxed transition-colors ${isDark ? 'text-slate-400' : 'text-slate-500'} font-['Outfit']`}>Barcha ma'lumotlaringizdan foydalanib, biznesingiz uchun mukammal va professional sayt yaratib beramiz.</motion.p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 lg:gap-6 pt-6 italic">
-            <Button size="lg" className="h-16 lg:h-24 px-10 lg:px-16 rounded-2xl lg:rounded-[2.5rem] text-xl lg:text-2xl font-black bg-primary text-white shadow-2xl shadow-primary/30 border-none outline-none font-['Outfit']" asChild><a href="https://t.me/temur070894" className="flex items-center gap-4">Saytni Yaratish <ArrowRight size={24} /></a></Button>
-            <Button size="lg" variant="outline" className={`h-16 lg:h-24 px-10 lg:px-16 rounded-2xl lg:rounded-[2.5rem] text-xl lg:text-2xl font-black border-2 lg:border-4 ${isDark ? 'border-slate-800 text-white' : 'border-slate-200 text-slate-900'} font-['Outfit']`} asChild><a href="#templates">Ishlarimiz</a></Button>
+            <Button size="lg" className="h-16 lg:h-24 px-10 lg:px-16 rounded-2xl lg:rounded-[2.5rem] text-xl lg:text-2xl font-black bg-primary text-white shadow-2xl shadow-primary/30 border-none outline-none font-['Outfit']" asChild><a href="https://t.me/temur070894" className="flex items-center gap-4">Boshlash <ArrowRight size={24} /></a></Button>
+            <Button size="lg" variant="outline" className={`h-16 lg:h-24 px-10 lg:px-16 rounded-2xl lg:rounded-[2.5rem] text-xl lg:text-2xl font-black border-2 lg:border-4 ${isDark ? 'border-slate-800 text-white' : 'border-slate-200 text-slate-900 shadow-xl'} font-['Outfit']`} asChild><a href="#templates">Ishlarimiz</a></Button>
           </div>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function App() {
             <h2 className={`text-4xl lg:text-7xl font-black tracking-tight transition-colors ${isDark ? 'text-white' : 'text-slate-900'} font-['Outfit'] uppercase`}>Imkoniyatlar</h2>
             <p className={`text-base lg:text-xl font-bold max-w-2xl mx-auto transition-colors ${isDark ? 'text-slate-400' : 'text-slate-500'} font-['Outfit']`}>Biznesingizni yangi bosqichga olib chiqadigan premium yechimlar.</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">{[BrainCircuit, Zap, Layers, Globe, MousePointer2, Sparkles].map((icon, i) => <FeatureCard key={i} icon={icon} title={["AI Algoritmlari", "Ultra Tevkorlik", "Modern Dizayn", "Global Reach", "User Friendly", "Premium Sifat"][i]} desc={["Dizayn va struktura avtomatik tanlanadi.", "Saytlar soniyalarda yuklanadi.", "Trenddagi dizayn elementlari.", "Global SEO optimizatsiya.", "To'liq intuitiv interfeys.", "Har bir detalga e'tibor."][i]} />)}</div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 text-left">{[BrainCircuit, Zap, Layers, Globe, MousePointer2, Sparkles].map((icon, i) => <FeatureCard key={i} icon={icon} title={["AI Algoritmlari", "Ultra Tevkorlik", "Modern Dizayn", "Global Reach", "User Friendly", "Premium Sifat"][i]} desc={["Dizayn va struktura avtomatik tanlanadi.", "Saytlar soniyalarda yuklanadi.", "Trenddagi dizayn elementlari.", "Global SEO optimizatsiya.", "To'liq intuitiv interfeys.", "Har bir detalga e'tibor."][i]} />)}</div>
         </div>
       </section>
 
@@ -142,10 +142,10 @@ export default function App() {
               {selectedCategory === 'stomatologiya' ? (
                 <motion.div key="sub" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-12">
                    <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
-                       <div className="space-y-4"><h2 className={`text-4xl lg:text-7xl font-black transition-colors ${isDark ? 'text-white' : 'text-slate-900'} font-['Outfit'] uppercase`}>Stomatologiya</h2><p className={`text-base lg:text-xl font-bold ${isDark ? 'text-slate-400' : 'text-slate-500'} font-['Outfit']`}>Premium takliflar.</p></div>
+                       <div className="space-y-4 text-left"><h2 className={`text-4xl lg:text-7xl font-black transition-colors ${isDark ? 'text-white' : 'text-slate-900'} font-['Outfit'] uppercase`}>Stomatologiya</h2><p className={`text-base lg:text-xl font-bold ${isDark ? 'text-slate-400' : 'text-slate-500'} font-['Outfit']`}>Premium takliflar.</p></div>
                        <Button onClick={() => setSelectedCategory(null)} className="h-14 lg:h-16 px-8 lg:px-10 rounded-xl lg:rounded-2xl bg-slate-900 text-white font-black flex items-center gap-3 border-none font-['Outfit']"><ChevronLeft size={24} /> Qaytish</Button>
                    </div>
-                   <div className="grid md:grid-cols-3 gap-8"><TemplateCard name="NexDent Premium" type="High Fidelity" image="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2070" delay={0.1} onSelect={() => setActivePreview('nexdent')} /></div>
+                   <div className="grid md:grid-cols-3 gap-8 text-left"><TemplateCard name="NexDent Premium" type="Full Version" image="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=2070" delay={0.1} onSelect={() => setActivePreview('nexdent')} /></div>
                 </motion.div>
               ) : (
                 <motion.div key="cat" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className="space-y-12">
@@ -158,13 +158,13 @@ export default function App() {
       </section>
 
       {/* Footer (Responsive) */}
-      <footer className="py-16 lg:py-32 bg-slate-900 text-white px-6 lg:px-12 font-['Outfit']">
+      <footer className="py-16 lg:py-32 bg-slate-900 text-white px-6 lg:px-12 font-['Outfit'] border-t border-white/5">
          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-12 text-center lg:text-left">
            <div className="flex flex-col items-center lg:items-start gap-4">
-             <div className="flex items-center gap-4"><div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20"><Zap size={20} /></div><span className="text-2xl font-black uppercase tracking-tighter">SAYTCHI.UZ</span></div>
-             <p className="text-slate-500 max-w-xs font-medium">Professional jamoa platformasi.</p>
+             <div className="flex items-center gap-4"><div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20"><Zap size={20} /></div><span className="text-2xl font-black uppercase tracking-tighter">SAYTCHI<span className="text-primary text-xl">.UZ</span></span></div>
+             <p className="text-slate-500 max-w-xs font-medium italic">Professional platforma yechimi.</p>
            </div>
-           <div className="text-slate-500 font-bold text-[10px] lg:text-sm tracking-widest uppercase">&copy; 2026 Saytchi.uz. Barcha huquqlar himoyalangan.</div>
+           <div className="text-slate-500 font-bold text-[10px] lg:text-[11px] tracking-widest uppercase italic">&copy; 2026 Saytchi.uz. Barcha huquqlar himoyalangan.</div>
            <div className="flex gap-8 uppercase font-black text-xs text-primary"><a href="#">Telegram</a><a href="#">Instagram</a></div>
          </div>
       </footer>
